@@ -56,27 +56,27 @@ let menu = `𔓕꯭  ꯭ ꯭ 𓏲꯭֟፝੭ ꯭⌑𝑴𝒆𝒏𝒖 𝒅
  *【𝕷 𝖎 𝖘 𝖙 𝖆 - 𝕯𝖊 - 𝕮 𝖔 𝖒 𝖆 𝖓 𝖉 𝖔 𝖘】* 
 
 ┏━━⪩「 ♡⃝𝕴𝖓𝖋𝖔𝖗𝖒𝖆𝖈𝖎ó𝖓ᚐ҉ᚐ 」⪨
-┃❀ .menu
-┃❀ .runtime
-┃❀ .script
-┃❀ .staff
-┃❀ .blocklist
-┃❀ .creador
-┃❀ .editautoresponder
-┃❀ .owner
-┃❀ .database
-┃❀ .usuarios
-┃❀ .ds
-┃❀ .listprem
-┃❀ .status
-┃❀ .solicitud *<mensaje>*
-┃❀ .sug *<mensaje>*
-┃❀ .skyplus
-┃❀ .infobot
-┃❀ .ping
-┃❀ .reportar
-┃❀ .sistema
-┃❀ .reportar
+┃🌐 .menu
+┃🌐 .runtime
+┃🌐 .script
+┃🌐 .staff
+┃🌐 .blocklist
+┃🌐 .creador
+┃🌐 .editautoresponder
+┃🌐 .owner
+┃🌐 .database
+┃🌐 .usuarios
+┃🌐 .ds
+┃🌐 .listprem
+┃🌐 .status
+┃🌐 .solicitud *<mensaje>*
+┃🌐 .sug *<mensaje>*
+┃🌐 .skyplus
+┃🌐 .infobot
+┃🌐 .ping
+┃🌐 .reportar
+┃🌐 .sistema
+┃🌐 .reportar
 ┗━━━━━━━━━━━━━━━━━⪩
 ┏━━⪩「 ♡⃝𝕽𝖊𝖌𝖎𝖘𝖙𝖗𝖔ᚐ҉ᚐ 」⪨
 ┃❋ .reg
