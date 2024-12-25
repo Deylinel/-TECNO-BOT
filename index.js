@@ -7,13 +7,13 @@ import cfonts from 'cfonts';
 import { createInterface } from 'readline';
 import yargs from 'yargs';
 import chalk from 'chalk';
-console.log('\n✰ Iniciando Yuki Suou Ai ✰');
+console.log('\n✰ Iniciando ⚙️TECNO BOT ✰');
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const require = createRequire(__dirname);
 const { name, description, author, version } = require(join(__dirname, './package.json'));
 const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
-say('Yuki Suou Ai', {
+say('tecno Bot ', {
 font: 'block',
 align: 'center',
 colors: ['magentaBright']
@@ -23,7 +23,7 @@ font: 'chrome',
 align: 'center',
 colors: ['redBright']
 });
-say(`Developed By • The-King-Destroy`, {
+say(`Developed By • The-King-Deylin`, {
 font: 'console',
 align: 'center',
 colors: ['blueBright']
