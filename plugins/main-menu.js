@@ -26,7 +26,7 @@ let totalreg = Object.keys(global.db.data.users).length
 let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
-let perfil = await conn.profilePictureUrl(who).catch(_ => 'https://path_to_high_quality_image.jpg')let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+let perfil = await conn.profilePictureUrl(who).catch(_ => 'https://https://qu.ax/CfESA.jpg')let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 const vid = ['https://qu.ax/CfESA.jpg ', '', '']
 
 let menu = `𔓕꯭  ꯭ ꯭ 𓏲꯭֟፝੭ ꯭⌑𝑴𝒆𝒏𝒖 𝒅𝒆 𝑻𝒆𝒄𝒏𝒐 𝑩𝒐𝒕⌑꯭ 𓏲꯭֟፝੭ ꯭  ꯭ ꯭𔓕
