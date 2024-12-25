@@ -16,8 +16,8 @@ global.confirmCode = ''
 
 //• ↳𝑺𝑶𝑳𝑶 𝑫𝑬𝑺𝑨𝑹𝑹𝑶𝑳𝑳𝑨𝑫𝑶𝑹𝑬𝑺 𝑨𝑷𝑹𝑶𝑩𝑨𝑫𝑶𝑺
 global.owner = [
-  ['584120346669', '⚜️ 𝕮𝖗𝖊𝖆𝖉𝖔𝖗 ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜', true],
-  ['5212441357601', '🌷 𝓔𝓶𝓶𝓪 𝓥𝓲𝓸𝓵𝓮𝓽𝓼 𝓥𝓮𝓻𝓼𝓲ó𝓷', true],
+  ['50488198573', '⚜️ 𝕮𝖗𝖊𝖆𝖉𝖔𝖗 ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜', true],
+  ['584120346669', '🌷 𝓔𝓶𝓶𝓪 𝓥𝓲𝓸𝓵𝓮𝓽𝓼 𝓥𝓮𝓻𝓼𝓲ó𝓷', true],
   ['50557865603',  'Niño Piña🍍', true],
   ['5216671548329', '🌹 𝓛𝓮𝓰𝓷𝓪', true],
   ['584148256527', '☆꧁༒ĹєǤ𝒆𝐧𝐃༒꧂☆', true],
@@ -43,17 +43,17 @@ global.jadi = 'YukiJadiBot'
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
 global.packsticker = `♾ ━━━━━━━━\n├ ɓσƭ:\n├ ρяοριєταяιο:\n├ ƒєϲнα ∂є ϲяєαϲιόи:\n├ нοяα:\n♾━━━━━━━━`
-global.packname = `𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 🌸`
-global.author = `♾━━━━━━━━\n⇝͟͞ ۵̤͟𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭̈♡̵̑ ͟͞ ⋆\n⇝ ۵-̱̅ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜-͞ˍ\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: ৎ୭࠭͢𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭ⷭ𓆪͟͞ `;
-global.wm = 'ৎ୭࠭͢𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭ⷭ𓆪͟͞ ';
-global.titulowm = '͟͞ ৎ୭࠭͢𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉̤𓆪 ͟͞';
-global.titulowm2 = `͟͞ ৎ୭࠭͢𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉̤𓆪 ͟͞`
-global.igfg = 'ᥫᩣⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜'
-global.botname = '♡⃝𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉ᚐ҉ᚐ'
-global.dev = '© 𝒫𝑜𝓌𝑒𝓇𝑒𝒹 𝐵𝓎 ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜'
-global.textbot = 'ৎ୭࠭͢𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭ⷭ𓆪͟͞ '
-global.gt = '͟͞ ৎ୭࠭͢𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉̤𓆪 ͟͞';
-global.namechannel = '♡⃝𝒞𝐻𝒜𝒩𝒩𝐸𝐿 𝒴𝒰𝒦𝐼 𝒮𝒰𝒪𝒰ᚐ҉ᚐ'
+global.packname = `𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭 🌸`
+global.author = `♾━━━━━━━━\n⇝͟͞ ۵̤͟𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭̈♡̵̑ ͟͞ ⋆\n⇝ ۵-̱̅𝐃𝐞𝐲𝐥𝐢𝐧-͞ˍ\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: ৎ୭࠭͢𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭ⷭ𓆪͟͞ `;
+global.wm = 'ৎ୭࠭͢𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭ⷭ𓆪͟͞ ';
+global.titulowm = '͟͞ ৎ୭࠭͢𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕𓆪 ͟͞';
+global.titulowm2 = `͟͞ ৎ୭࠭͢𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕𓆪 ͟͞`
+global.igfg = '𝑫𝒆𝒚𝒍𝒊𝒏'
+global.botname = '♡⃝𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕҉ᚐ'
+global.dev = '© 𝑷𝒐𝒘𝒓𝒆𝒅 𝑩𝒚 𝑫𝒆𝒚𝒍𝒊𝒏'
+global.textbot = 'ৎ୭࠭͢𝑻𝒆𝒄𝒏𝒐-𝐁𝐨𝐭ⷭ𓆪͟͞ '
+global.gt = '͟͞ ৎ୭࠭͢𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕𓆪 ͟͞';
+global.namechannel = '♡⃝𝑪𝒂𝒏𝒂𝒍 𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕ᚐ҉ᚐ'
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
 global.imagen1 = fs.readFileSync('./src/menus/Menu2.jpg');
@@ -78,22 +78,22 @@ global.rule = fs.readFileSync('./src/rule.jpg')
 global.photoSity = [imagen8, imagen1, imagen4, imagen6]
 
 //• ↳ ◜𝑭𝑨𝑲𝑬 𝑬𝑺𝑻𝑰𝑳𝑶◞ • 🪩
-global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '♡⃝𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉ᚐ҉ᚐ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '♡⃝𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕ᚐ҉ᚐ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
-global.fakegif2 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Yuki Suou', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '⚘݄𖠵⃕⁖𖥔.𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐨❞ ꔷ──᜔◇⃟̣̣⃕🌸', jpegThumbnail: logo5 }}};
+global.fakegif2 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Yuki Suou', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '⚘݄𖠵⃕⁖𖥔.𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐨❞ ꔷ──᜔◇⃟̣̣⃕🚀', jpegThumbnail: logo5 }}};
 
-global.fakegif3 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Yuki Suou', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '⚘݄𖠵⃕⁖𝐓𝐨𝐧𝐭𝐨 (￣へ ￣ ) 🌹', jpegThumbnail: logo3 }}};
+global.fakegif3 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Yuki Suou', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '⚘݄𖠵⃕⁖𝐓𝐨𝐧𝐭𝐨 (￣へ ￣ ) 🛸', jpegThumbnail: logo3 }}};
 
-global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Yuki Suou', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '♡⃝𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉ᚐ҉ 🌷ᚐ', jpegThumbnail: logo5 }}};
+global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Yuki Suou', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '♡⃝𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕ᚐ҉ 🚀ᚐ', jpegThumbnail: logo5 }}};
 
-global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`͟͞ ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜 ͟͞`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `ৎ୭࠭͢𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭ⷭ𓆪͟͞ \n ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜࠭ ͟͞`, 'jpegThumbnail': logo4 }}}
+global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`͟͞ 𝑫𝒆𝒚𝒍𝒊𝒏 ͟͞`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `ৎ୭࠭͢𝑻𝒆𝒄𝒏𝒐-𝐁𝐨𝐭ⷭ𓆪͟͞ \n 𝑫𝒆𝒚𝒍𝒊𝒏 ͟͞`, 'jpegThumbnail': logo4 }}}
 
 global.ch = {
 ch1: '120363343811229130@newsletter',
 ch2: '120363322713003916@newsletter',
 }
 
-//• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
+//• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🚀
 global.gp4 = 'https://chat.whatsapp.com/E78uEs2qJIE0apCLB7rSQZ' //Grupo Oficial De Yuki_Suou
 global.gp1 = 'https://chat.whatsapp.com/E78uEs2qJIE0apCLB7rSQZ' //Grupo 
 global.gp2 = 'https://chat.whatsapp.com/B6uCcLp85mG5Xls6QdzT4H'//
@@ -106,7 +106,7 @@ global.correo = 'thekingdestroy507@gmail.com'
 global.cn ='https://whatsapp.com/channel/0029VapSIvR5EjxsD1B7hU3T';
 
 var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'Linda Mañana'; break; case 1: hour = 'Linda Mañana'; break; case 2: hour = 'Linda Mañana'; break; case 3: hour = 'Linda Mañana'; break; case 4: hour = 'linda mañana'; break; case 5: hour = 'Linda Mañana'; break; case 6: hour = 'Linda Mañana'; break; case 7: hour = 'Linda Mañana'; break; case 8: hour = 'Linda Mañana'; break; case 9: hour = 'Linda Mañana'; break; case 10: hour = 'Lindo Dia'; break; case 11: hour = 'Lindo Dia'; break; case 12: hour = 'Lindo Dia'; break; case 13: hour = 'Lindo Dia'; break; case 14: hour = 'Linda Tarde'; break; case 15: hour = 'Linda Tarde'; break; case 16: hour = 'Linda Tarde'; break; case 17: hour = 'Linda Tarde'; break; case 18: hour = 'Linda Noche'; break; case 19: hour = 'Linda Noche'; break; case 20: hour = 'Linda Noche'; break; case 21: hour = 'Linda Noche'; break; case 22: hour = 'Linda Noche'; break; case 23: hour = 'Linda Noche'; break;}
-global.saludo = '🍭' + hour;
+global.saludo = '🚀' + hour;
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363343811229130@newsletter", serverMessageId: 100, newsletterName: namechannel, }, }, }
 //• ↳ ◜𝑻𝑰𝑬𝑴𝑷𝑶◞ • 🕒
@@ -118,8 +118,8 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nYuki - Bot`;
-global.nomorown = '584120346669';
+global.wm2 = `${dia} ${fecha}\nTecno - Bot`;
+global.nomorown = '50488198573';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
