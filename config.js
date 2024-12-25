@@ -89,8 +89,8 @@ global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remote
 global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`͟͞ 𝑫𝒆𝒚𝒍𝒊𝒏 ͟͞`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `ৎ୭࠭͢𝑻𝒆𝒄𝒏𝒐-𝐁𝐨𝐭ⷭ𓆪͟͞ \n 𝑫𝒆𝒚𝒍𝒊𝒏 ͟͞`, 'jpegThumbnail': logo4 }}}
 
 global.ch = {
-ch1: '120363343811229130@newsletter',
-ch2: '120363322713003916@newsletter',
+ch1: '120363365444927738@newsletter',
+ch2: '120363365444927738@newsletter',
 }
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🚀
@@ -98,8 +98,8 @@ global.gp4 = 'https://chat.whatsapp.com/E78uEs2qJIE0apCLB7rSQZ' //Grupo Oficial 
 global.gp1 = 'https://chat.whatsapp.com/E78uEs2qJIE0apCLB7rSQZ' //Grupo 
 global.gp2 = 'https://chat.whatsapp.com/B6uCcLp85mG5Xls6QdzT4H'//
 global.comunidad1 = 'https://chat.whatsapp.com/B6uCcLp85mG5Xls6QdzT4H' //Comunidad Yuki_Suou
-global.channel = 'https://whatsapp.com/channel/0029VapSIvR5EjxsD1B7hU3T' //Canal Oficial
-global.channel2 = 'https://whatsapp.com/channel/0029VavzewJLikg78gILRn1o' //Canal test
+global.channel = 'https://whatsapp.com/channel/0029VawF8fBBvvsktcInIz3m' //Canal Oficial
+global.channel2 = 'https://whatsapp.com/channel/0029VawF8fBBvvsktcInIz3m' //Canal test
 global.yt = 'https://youtube.com/@user-the-king-destroy?si=8kNB8k2k3ESQ_J9j' //Canal De Youtube
 global.md = 'https://github.com/The-King-Destroy/Yuki_Suou-Bot' //Github Oficial
 global.correo = 'thekingdestroy507@gmail.com'
