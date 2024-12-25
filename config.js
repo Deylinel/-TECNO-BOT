@@ -37,9 +37,9 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.8'
 global.vs = '2.0.0'
 global.languaje = 'Español'
-global.nameqr = 'Yuki Suou - Bot'
-global.sessions = 'YukiSession'
-global.jadi = 'YukiJadiBot'
+global.nameqr = 'Tecno - Bot'
+global.sessions = 'Tecno-BotSession'
+global.jadi = 'Tecno-Bot'
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
 global.packsticker = `♾ ━━━━━━━━\n├ ɓσƭ:\n├ ρяοριєταяιο:\n├ ƒєϲнα ∂є ϲяєαϲιόи:\n├ нοяα:\n♾━━━━━━━━`
