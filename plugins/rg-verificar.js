@@ -8,7 +8,7 @@ let name2 = conn.getName(m.sender)
   let delirius = await axios.get(`https://deliriussapi-oficial.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`)
   let paisdata = delirius.data.result
   let mundo = paisdata ? `${paisdata.name} ${paisdata.emoji}` : 'Desconocido'
-  let perfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/2p85hb.jpg')
+  let perfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
   let bio = 0, fechaBio
  // let who2 = m.isGroup ? _.get(m, "mentionedJid[0]", m.quoted?.sender || m.sender) : m.sender
   let sinDefinir = '😿 Es privada'
@@ -43,22 +43,22 @@ let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
 m.react('📩') 
 let regbot = `👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-「🌐」𝗡𝗼𝗺𝗯𝗿𝗲: ${name}
-「🚀」𝗘𝗱𝗮𝗱: ${age} años
+「🌸」𝗡𝗼𝗺𝗯𝗿𝗲: ${name}
+「⭐」𝗘𝗱𝗮𝗱: ${age} años
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-「🌟」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:
+「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:
 • 15 Yenes 💴
 • 5 Coins 🪙
 • 245 Experiencia ✨
 • 12 Tokens ⚜️
 
 ᴠᴇʀɪғɪᴄᴀ ᴛᴜ ʀᴇɢɪᴛʀᴏ ᴀϙᴜɪ:
-https://whatsapp.com/channel/0029VawF8fBBvvsktcInIz3m
+${channel2}
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 ${packname}`
-await conn.sendMini(m.chat, '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰', textbot, regbot, imagen1, imagen1, 120363365444927738@newsletter, m)
+await conn.sendMini(m.chat, '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰', textbot, regbot, imagen1, imagen1, channel, m)
 //await m.reply(`${sn}`)   
-  
+
 let chtxt = `
 👤 *𝚄𝚜𝚎𝚛* » ${m.pushName || 'Anónimo'}
 🌎 *𝙿𝚊𝚒𝚜* » ${mundo}
@@ -70,7 +70,7 @@ let chtxt = `
 ☁️ *𝙽𝚞𝚖𝚎𝚛𝚘 𝚍𝚎 𝚛𝚎𝚐𝚒𝚜𝚝𝚛𝚘* »
 ⤷ ${sn}
 `.trim()
-  
+
 await conn.sendMessage(global.idchannel, { text: chtxt, contextInfo: {
 externalAdReply: {
 title: "【 🔔 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎́𝐍 🔔 】",
@@ -86,4 +86,4 @@ handler.help = ['reg']
 handler.tags = ['rg']
 handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar'] 
 
-export default handler 
+export default handler
