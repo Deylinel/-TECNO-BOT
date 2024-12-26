@@ -111,12 +111,12 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
 
 global.icono = [ 
-'https://files.catbox.moe/xuwxy7.jpg',
-'https://files.catbox.moe/tp697d.jpg',
-'https://files.catbox.moe/qpkq55.jpg',
-'https://files.catbox.moe/028uxb.jpg',
-'https://files.catbox.moe/jh2rwk.jpg',
-'https://files.catbox.moe/guvo2k.jpg'
+'https://files.catbox.moe/w6xtbb.jpg',
+'https://files.catbox.moe/ba0iky.jpg',
+'https://files.catbox.moe/2p85hb.jpg',
+'https://files.catbox.moe/eu1j1n.jpg',
+'https://files.catbox.moe/7h7syw.jpg',
+'https://files.catbox.moe/8qyr7g.jpg'
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: textbot, body: '🚀 ♡⃝𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕ᚐ҉ᚐ', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
