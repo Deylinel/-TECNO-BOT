@@ -24,14 +24,18 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
     let chat = global.db.data.chats[m.chat];
 
+    // Mensaje de bienvenida
     if (chat.welcome && m.messageStubType === 27) {
-        let wel = `┌─────────❖ 𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ❖─────────┐\n` +
-                  `│ ✨ **¡Bienvenido(a) a la red digital!**\n` +
-                  `│ ➤ Usuario: *@${userId.split`@`[0]}*\n` +
-                  `│ ➤ Grupo: *${groupMetadata.subject}*\n` +
+        let wel = `╭═══🌐═══◤𝑻𝑬𝑪𝑵𝑶-𝑩𝑶𝑻◢═══🌐═══╮\n` +
                   `│\n` +
-                  `│ 🧩 Usa *#menu* para explorar todas las opciones.\n` +
-                  `└─────────────────────────────┘`;
+                  `│ 🤖 **¡Bienvenido(a) a nuestro sistema!**\n` +
+                  `│\n` +
+                  `│ ➤ **Usuario:** *@${userId.split`@`[0]}*\n` +
+                  `│ ➤ **Grupo:** *${groupMetadata.subject}*\n` +
+                  `│\n` +
+                  `│ 🛠️ Usa *#menu* para ver las funciones disponibles.\n` +
+                  `│\n` +
+                  `╰══════════════════════════════╯`;
         try {
             await conn.sendMini(m.chat, packname, dev, wel, img, img, channel, fkontak);
         } catch (sendError) {
@@ -39,14 +43,17 @@ export async function before(m, { conn, participants, groupMetadata }) {
         }
     }
 
-    // Mensaje de despedida (cuando se sale)
+    // Mensaje de despedida
     if (chat.welcome && m.messageStubType === 28) {
-        let bye = `┌─────────❖ 𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ❖─────────┐\n` +
-                  `│ ⚡ **Desconexión detectada.**\n` +
-                  `│ ➤ Usuario: *@${userId.split`@`[0]}*\n` +
+        let bye = `╭═══⚡═══◤𝑻𝑬𝑪𝑵𝑶-𝑩𝑶𝑻◢═══⚡═══╮\n` +
                   `│\n` +
-                  `│ 🌌 ¡Te deseamos lo mejor fuera de este espacio!\n` +
-                  `└─────────────────────────────┘`;
+                  `│ 🔌 **Usuario desconectado del sistema.**\n` +
+                  `│\n` +
+                  `│ ➤ **Usuario:** *@${userId.split`@`[0]}*\n` +
+                  `│\n` +
+                  `│ 🌌 ¡Buena suerte fuera del grupo!\n` +
+                  `│\n` +
+                  `╰══════════════════════════════╯`;
         let img2;
         try {
             img2 = await (await fetch(goodbyeImage)).buffer(); 
@@ -56,14 +63,17 @@ export async function before(m, { conn, participants, groupMetadata }) {
         }
     }
 
-    // Mensaje de expulsión (cuando se echa a alguien)
+    // Mensaje de expulsión
     if (chat.welcome && m.messageStubType === 32) {
-        let kick = `┌─────────❖ 𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ❖─────────┐\n` +
-                   `│ 🚨 **Usuario expulsado del sistema.**\n` +
-                   `│ ➤ Usuario: *@${userId.split`@`[0]}*\n` +
+        let kick = `╭═══🚨═══◤𝑻𝑬𝑪𝑵𝑶-𝑩𝑶𝑻◢═══🚨═══╮\n` +
                    `│\n` +
-                   `│ ❌ **Motivo:** Incumplimiento de las normas del grupo.\n` +
-                   `└─────────────────────────────┘`;
+                   `│ ❌ **Usuario expulsado del sistema.**\n` +
+                   `│\n` +
+                   `│ ➤ **Usuario:** *@${userId.split`@`[0]}*\n` +
+                   `│\n` +
+                   `│ 🔒 **Motivo:** Incumplimiento de normas.\n` +
+                   `│\n` +
+                   `╰══════════════════════════════╯`;
         let img3;
         try {
             img3 = await (await fetch(goodbyeImage)).buffer();
@@ -73,7 +83,6 @@ export async function before(m, { conn, participants, groupMetadata }) {
         }
     }
 }
-
 
 /*let WAMessageStubType = (await import('@whiskeysockets/baileys')).default;
 import fetch from 'node-fetch';
