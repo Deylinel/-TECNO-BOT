@@ -59,7 +59,7 @@ ${packname}`
 await conn.sendMini(m.chat, '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰', textbot, regbot, imagen1, imagen1, 120363365444927738@newsletter, m)
 //await m.reply(`${sn}`)   
   
-let chtxt = `🚀TECNO-BOT ⚙️
+let chtxt = `
 👤 *𝚄𝚜𝚎𝚛* » ${m.pushName || 'Anónimo'}
 🌎 *𝙿𝚊𝚒𝚜* » ${mundo}
 🗂 *𝚅𝚎𝚛𝚒𝚏𝚒𝚌𝚊𝚌𝚒𝚘́𝚗* » ${user.name}
