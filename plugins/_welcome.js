@@ -1,12 +1,12 @@
 export async function before(m, { conn, participants, groupMetadata }) {
     const fkontak = { key: { fromMe: false, participant: '0@s.whatsapp.net' }, message: { conversation: '¡Hola!' } };
-    
+
     if (!m.messageStubType || !m.isGroup) return true;
 
     let userId = m.messageStubParameters[0];
 
-    const welcomeImage = 'https://files.catbox.moe/cl5ip5.jpeg'; // Imagen de bienvenida
-    const goodbyeImage = 'https://files.catbox.moe/kp0rhx.png'; // Imagen de despedida
+    const welcomeImage = 'https://files.catbox.moe/ibij1z.jpg'; // Imagen de bienvenida
+    const goodbyeImage = 'https://files.catbox.moe/r44rha.jpg'; // Imagen de despedida
 
     let pp;
     try {
@@ -25,39 +25,56 @@ export async function before(m, { conn, participants, groupMetadata }) {
     let chat = global.db.data.chats[m.chat];
 
     if (chat.welcome && m.messageStubType === 27) {
-    let wel = `┌──⪨ ✨ 𝐓𝐄𝐂𝐇𝐍𝐎-𝐁𝐎𝐓 🚀 ⪩──\n│ 「 🌐 𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎/𝐀 」\n│ 🛸 Usuario: @${userId.split`@`[0]}\n│ 🪐 Grupo: ${groupMetadata.subject}\n│ 🤖 Usa *#menu* para explorar mis comandos\n└───────────────────────⩺\n\n⚡ ¡Prepárate para una experiencia única!`;
-    try {
-        await conn.sendMini(m.chat, packname, dev, wel, img, img, channel, fkontak);
-    } catch (sendError) {
-        console.error('Error al enviar mensaje de bienvenida:', sendError);
+        let wel = `┌─────────❖ 𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ❖─────────┐\n` +
+                  `│ ✨ **¡Bienvenido(a) a la red digital!**\n` +
+                  `│ ➤ Usuario: *@${userId.split`@`[0]}*\n` +
+                  `│ ➤ Grupo: *${groupMetadata.subject}*\n` +
+                  `│\n` +
+                  `│ 🧩 Usa *#menu* para explorar todas las opciones.\n` +
+                  `└─────────────────────────────┘`;
+        try {
+            await conn.sendMini(m.chat, packname, dev, wel, img, img, channel, fkontak);
+        } catch (sendError) {
+            console.error('Error al enviar mensaje de bienvenida:', sendError);
+        }
+    }
+
+    // Mensaje de despedida (cuando se sale)
+    if (chat.welcome && m.messageStubType === 28) {
+        let bye = `┌─────────❖ 𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ❖─────────┐\n` +
+                  `│ ⚡ **Desconexión detectada.**\n` +
+                  `│ ➤ Usuario: *@${userId.split`@`[0]}*\n` +
+                  `│\n` +
+                  `│ 🌌 ¡Te deseamos lo mejor fuera de este espacio!\n` +
+                  `└─────────────────────────────┘`;
+        let img2;
+        try {
+            img2 = await (await fetch(goodbyeImage)).buffer(); 
+            await conn.sendMini(m.chat, packname, dev, bye, img2, img2, channel, fkontak);
+        } catch (sendError) {
+            console.error('Error al enviar mensaje de despedida:', sendError);
+        }
+    }
+
+    // Mensaje de expulsión (cuando se echa a alguien)
+    if (chat.welcome && m.messageStubType === 32) {
+        let kick = `┌─────────❖ 𝐘𝐮𝐤𝐢_𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ❖─────────┐\n` +
+                   `│ 🚨 **Usuario expulsado del sistema.**\n` +
+                   `│ ➤ Usuario: *@${userId.split`@`[0]}*\n` +
+                   `│\n` +
+                   `│ ❌ **Motivo:** Incumplimiento de las normas del grupo.\n` +
+                   `└─────────────────────────────┘`;
+        let img3;
+        try {
+            img3 = await (await fetch(goodbyeImage)).buffer();
+            await conn.sendMini(m.chat, packname, dev, kick, img3, img3, channel, fkontak);
+        } catch (sendError) {
+            console.error('Error al enviar mensaje de expulsión:', sendError);
+        }
     }
 }
 
-// Mensaje de despedida (cuando se sale)
-if (chat.welcome && m.messageStubType === 28) {
-    let bye = `┌──⪨ 🛸 𝐓𝐄𝐂𝐇𝐍𝐎-𝐁𝐎𝐓 🌐 ⪩──\n│ 「 🔻 𝐀𝐃𝐈𝐎́𝐒 」\n│ 🌌 Usuario: @${userId.split`@`[0]}\n│ ⚠️ *El código del grupo tiene más espacio ahora.*\n└───────────────────────⩺\n\n🌟 ¡Buena suerte en tu camino digital!`;
-    let img2;
-    try {
-        img2 = await (await fetch(goodbyeImage)).buffer(); 
-        await conn.sendMini(m.chat, packname, dev, bye, img2, img2, channel, fkontak);
-    } catch (sendError) {
-        console.error('Error al enviar mensaje de despedida:', sendError);
-    }
-}
 
-// Mensaje de expulsión (cuando se echa a alguien)
-if (chat.welcome && m.messageStubType === 32) {
-    let kick = `┌──⪨ 🚨 𝐓𝐄𝐂𝐇𝐍𝐎-𝐁𝐎𝐓 🛑 ⪩──\n│ 「 💔 𝐄𝐗𝐏𝐔𝐋𝐒𝐈𝐎́𝐍 」\n│ 🚫 Usuario: @${userId.split`@`[0]}\n│ ⚡ *Un error 404 en su permanencia.*\n└───────────────────────⩺\n\n🔒 ¡Seguimos avanzando sin interrupciones!`;
-    let img3;
-    try {
-        img3 = await (await fetch(goodbyeImage)).buffer();
-        await conn.sendMini(m.chat, packname, dev, kick, img3, img3, channel, fkontak);
-    } catch (sendError) {
-        console.error('Error al enviar mensaje de expulsión:', sendError);
-    }
-}
-
- 
 /*let WAMessageStubType = (await import('@whiskeysockets/baileys')).default;
 import fetch from 'node-fetch';
 
@@ -79,7 +96,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
  if (chat.welcome && m.messageStubType === 27) {
     this.sendMessage(m.chat, { audio: { url: vn }, 
     contextInfo: { forwardedNewsletterMessageInfo: { 
-    newsletterJid: "120363365444927738@newsletter",
+    newsletterJid: "120363307382381547@newsletter",
     serverMessageId: '', 
     newsletterName: namechannel }, forwardingScore: 9999999, isForwarded: true, mentionedJid: getMentionedJid(), "externalAdReply": { 
     "title": `(ಥ ͜ʖಥ) 𝙒 𝙀 𝙇 𝘾 𝙊 𝙈 𝙀 (◕︿◕✿)`, 
@@ -95,7 +112,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
   if (chat.welcome && (m.messageStubType === 28 || m.messageStubType === 32)) {
     this.sendMessage(m.chat, { audio: { url: vn2 }, 
     contextInfo: { forwardedNewsletterMessageInfo: { 
-    newsletterJid: "120363365444927738@newsletter",
+    newsletterJid: "120363322713003916@newsletter",
     serverMessageId: '', 
     newsletterName: namechannel }, forwardingScore: 9999999, isForwarded: true, mentionedJid: getMentionedJid(), "externalAdReply": { 
     "title": `(oꆤ︵ꆤo) 𝘼 𝘿 𝙄 𝙊 𝙎 (|||❛︵❛.)`, 
