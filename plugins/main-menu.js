@@ -29,9 +29,9 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-const vid = ['https://files.catbox.moe/1dtvv7.mp4', 'https://files.catbox.moe/yxpqgu.mp4', 'https://files.catbox.moe/0iw0dc.mp4']
+const vid = ['https://1drv.ms/v/c/e6b90c9d7b77df96/EYf-kna9qzhHrXZo6CiXhlIB0xrIKtDhM9Nopv7tmDoicQ', 'https://1drv.ms/v/c/e6b90c9d7b77df96/EYf-kna9qzhHrXZo6CiXhlIB0xrIKtDhM9Nopv7tmDoicQ', 'https://1drv.ms/v/c/e6b90c9d7b77df96/EYf-kna9qzhHrXZo6CiXhlIB0xrIKtDhM9Nopv7tmDoicQ']
 
-let menu = `𔓕꯭  ꯭ ꯭ 𓏲꯭֟፝੭ ꯭⌑𝑀𝑒𝓃ú 𝒹𝑒 𝒴𝓊𝓀𝒾꯭⌑꯭ 𓏲꯭֟፝੭ ꯭  ꯭ ꯭𔓕
+let menu = `𔓕꯭  ꯭ ꯭ 𓏲꯭֟፝੭ ꯭⌑𝑴𝒆𝒏𝒖 𝒅𝒆 𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕⌑꯭ 𓏲꯭֟፝੭ ꯭  ꯭ ꯭𔓕
 
 🚀 ¡𝑯𝒐𝒍𝒂! 𝑪𝒐𝒎𝒐 𝑬𝒔𝒕𝒂𝒔 𝒆𝒍 𝑫𝒊𝒂 𝒅𝒆 𝑯𝒐𝒚 *${taguser}* 𝑺𝒐𝒚 *𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕*, ${saludo}. 
 
