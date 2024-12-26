@@ -5,9 +5,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
     let userId = m.messageStubParameters[0];
 
-    const welcomeImage = 
-'https://files.catbox.moe/j2chet.jpg'; // Imagen de bienvenida
-    const goodbyeImage = 'https://files.catbox.moe/e5ua3q.jpg'; // Imagen de despedida
+    const welcomeImage = 'https://files.catbox.moe/ibij1z.jpg'; // Imagen de bienvenida
+    const goodbyeImage = 'https://files.catbox.moe/r44rha.jpg'; // Imagen de despedida
 
     let pp;
     try {
@@ -25,18 +24,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
     let chat = global.db.data.chats[m.chat];
 
-    // Mensaje de bienvenida
     if (chat.welcome && m.messageStubType === 27) {
-        let wel = `╭═══🌐═══◤𝑻𝑬𝑪𝑵𝑶-𝑩𝑶𝑻◢═══🌐═══╮\n` +
-                  `│\n` +
-                  `│ 🤖 **¡Bienvenido(a) a nuestro sistema!**\n` +
-                  `│\n` +
-                  `│ ➤ **Usuario:** *@${userId.split`@`[0]}*\n` +
-                  `│ ➤ **Grupo:** *${groupMetadata.subject}*\n` +
-                  `│\n` +
-                  `│ 🛠️ Usa *#menu* para ver las funciones disponibles.\n` +
-                  `│\n` +
-                  `╰══════════════════════════════╯`;
+        let wel = `┌─⌨️ *𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭* 💻\n│「 𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎 」\n└┬⌨️ Usuario: *@${userId.split`@`[0]}*\n   │📂 Bienvenido/a a *${groupMetadata.subject}*\n   └─⚙️ Usa *#menu* para ver los comandos.`;
         try {
             await conn.sendMini(m.chat, packname, dev, wel, img, img, channel, fkontak);
         } catch (sendError) {
@@ -44,17 +33,9 @@ export async function before(m, { conn, participants, groupMetadata }) {
         }
     }
 
-    // Mensaje de despedida
+    // Mensaje de despedida (cuando se sale)
     if (chat.welcome && m.messageStubType === 28) {
-        let bye = `╭═══⚡═══◤𝑻𝑬𝑪𝑵𝑶-𝑩𝑶𝑻◢═══⚡═══╮\n` +
-                  `│\n` +
-                  `│ 🔌 **Usuario desconectado del sistema.**\n` +
-                  `│\n` +
-                  `│ ➤ **Usuario:** *@${userId.split`@`[0]}*\n` +
-                  `│\n` +
-                  `│ 🌌 ¡Buena suerte fuera del grupo!\n` +
-                  `│\n` +
-                  `╰══════════════════════════════╯`;
+        let bye = `┌─⌨️ *𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭* 💻\n│「 𝐃𝐄𝐒𝐏𝐄𝐃𝐈𝐃𝐀 」\n└┬⌨️ Usuario: *@${userId.split`@`[0]}*\n   │📂 Ha salido del grupo.\n   └─⚙️ ¡Buena suerte!`;
         let img2;
         try {
             img2 = await (await fetch(goodbyeImage)).buffer(); 
@@ -64,17 +45,9 @@ export async function before(m, { conn, participants, groupMetadata }) {
         }
     }
 
-    // Mensaje de expulsión
+    // Mensaje de expulsión (cuando se echa a alguien)
     if (chat.welcome && m.messageStubType === 32) {
-        let kick = `╭═══🚨═══◤𝑻𝑬𝑪𝑵𝑶-𝑩𝑶𝑻◢═══🚨═══╮\n` +
-                   `│\n` +
-                   `│ ❌ **Usuario expulsado del sistema.**\n` +
-                   `│\n` +
-                   `│ ➤ **Usuario:** *@${userId.split`@`[0]}*\n` +
-                   `│\n` +
-                   `│ 🔒 **Motivo:** Incumplimiento de normas.\n` +
-                   `│\n` +
-                   `╰══════════════════════════════╯`;
+        let kick = `┌─⌨️ *𝐓𝐞𝐜𝐧𝐨-𝐁𝐨𝐭* 💻\n│「 𝐄𝐗𝐏𝐔𝐋𝐒𝐈𝐎𝐍 」\n└┬⌨️ Usuario: *@${userId.split`@`[0]}*\n   │📂 Ha sido expulsado del grupo.\n   └─⚙️ ¡Hasta nunca!`;
         let img3;
         try {
             img3 = await (await fetch(goodbyeImage)).buffer();
@@ -83,7 +56,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
             console.error('Error al enviar mensaje de expulsión:', sendError);
         }
     }
-}
+} 
 
 /*let WAMessageStubType = (await import('@whiskeysockets/baileys')).default;
 import fetch from 'node-fetch';
