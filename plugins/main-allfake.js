@@ -40,7 +40,7 @@ let pushname = m.pushName || 'Sin nombre'
 global.creador = 'Wa.me/584120346669'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/584120346669'
-global.namechannel = '♡⃝𝒞𝐻𝒜𝒩𝒩𝐸𝐿 𝒴𝒰𝒦𝐼 𝒮𝒰𝒪𝒰ᚐ҉ᚐ'
+global.namechannel = '♡⃝🚀𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕ᚐ҉ᚐ'
 global.namechannel2 = '✫𝚃𝙴𝙰𝙼  乂 𝚂𝚃𝙰𝚁𝙲𝙾𝚁𝙴✫'
 global.namegrupo = '♡⃝𝓨𝓾𝓴𝓲 𝓢𝓾𝓸𝓾 𝓑𝓸𝓽 𝓞𝓯𝓲𝓬𝓲𝓪𝓵ᚐ҉'
 global.namecomu = '✿ 𝒴𝒰𝒦𝐼 𝒮𝒰𝒪𝒰 𝐵𝒪𝒯 ✿'
@@ -49,9 +49,9 @@ global.colab2 = 'Niño Piña'
 global.colab3 = 'Legendary'
 
 //Ids channel
-global.idchannel = '120363343811229130@newsletter'
-global.canalIdM = ["120363322713003916@newsletter", "120363343811229130@newsletter"]
-global.canalNombreM = ["♡⃝𝒞𝐻𝒜𝒩𝒩𝐸𝐿 𝒴𝒰𝒦𝐼 𝒮𝒰𝒪𝒰ᚐ҉ᚐ", "✧┊┋◟✿𝐘𝐮𝐤𝐢 𝐒𝐮𝐨𝐮 𝐓𝐞𝐬𝐭✿◞┊┋✧"]
+global.idchannel = '120363365444927738@newsletter'
+global.canalIdM = ["120363365444927738@newsletter", "120363365444927738@newsletter"]
+global.canalNombreM = [" 𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒚ᚐ", "✧┊┋◟🚀𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕🚀◞┊┋✧"]
 global.channelRD = await getRandomChannel()
 
 //Reacciones De Comandos.!
@@ -119,7 +119,7 @@ global.icono = [
 'https://files.catbox.moe/guvo2k.jpg'
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: textbot, body: '🌹 ♡⃝𝒴𝓊𝓀𝒾_𝒮𝓊𝑜𝓊-𝐵𝑜𝓉ᚐ҉ᚐ', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: textbot, body: '🚀 ♡⃝𝑻𝒆𝒄𝒏𝒐-𝑩𝒐𝒕ᚐ҉ᚐ', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
 
